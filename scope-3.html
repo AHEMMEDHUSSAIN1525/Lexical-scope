@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scope-3</title>
+</head>
+<body>
+    <h1>Scope-3/h1>
+<script>
+    // what if we declare a local scope function in globally
+    var a="Data of a person is:"
+
+    Name();
+    function Name(){
+        var b="AHEMMED and his age is"
+
+        Age();
+        function Age(){
+            var c=23;
+            console.log(a,b,c);// this is a normal process of scope where it returns step-by-step
+        }
+    }
+    //now make some changes as we said in our starting comments
+
+/*var a="Data of a person is:"
+ // if  you try to execute this code it throws an error because except a all are local scope, so b,c are not defined
+Name();
+function Name(){
+    var b="AHEMMED and his age is"
+
+    Age();
+   }
+   function Age(){
+        var c=23;
+        console.log(a,b,c);
+   }*/
+  
+</script>
+</body>
+</html>

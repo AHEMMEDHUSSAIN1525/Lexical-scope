@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lexical</title>
+</head>
+<body>
+    <h1>In this method we use "THIS" variable will always point to the object that is calling that method</h1>
+    <script>
+         var d= new Date();
+         var personObj={
+           firstName: 'AHEMEMD',lastName:"LUCKY",age: 23,
+           getDetails : function(){
+               console.log(this)
+             }
+           }
+           personObj.getDetails();
+    </script>
+    <script>
+         var personObj={
+           firstName: 'AHEMEMD',lastName:"LUCKY",age: 23,
+         }
+         console.log(personObj.firstName);// here we just printed the elements which we needed in the object
+         console.log(personObj.lastName);
+         console.log(d);// this to know the date and time of execution 
+    </script>
+</body>
+</html>

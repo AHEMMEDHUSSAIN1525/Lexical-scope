@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scope-2</title>
+</head>
+<body>
+    <h2>scope-2</h2>
+    <script>
+        var a= "A";
+        One();
+        function One(){
+        var b= "B"
+
+        Two();
+        function Two(){
+          var c="C";
+         console.log(a,b,c);// condition where the a,b are iniside locally
+        }
+          //console.log(a,b,c);
+          /* if you run this by ommiting the first console.
+           Then u will get an error saying that "c" is not defined*/
+
+           console.log(b);// this commond also prints the output because "b" is the parent in this scope
+    }
+      //console.log(b); if you try to execute this part. then it throws an error as b is not defined, bcz b is a local scope.
+    </script>
+</body>
+</html>

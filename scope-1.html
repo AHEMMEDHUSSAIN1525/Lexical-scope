@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scope-1</title>
+</head>
+<body>
+    <h1>example-1 for scope</h1>
+    <script>
+        var a="volvo";
+first();
+function first(){
+     var b="hi";
+second();
+function second(){
+var c="hello";
+console.log(a);// here the code first returns 'a', 
+console.log(b,c);// after execution of var a then it goes to the parent and later to child scope
+}
+}
+</script>
+
+ <!--Another model-->
+    <script>
+        var a="volvo";
+first();
+function first(){
+     var b="hi";
+second();
+function second(){
+var c="hello";
+console.log(b,c);
+}
+}
+console.log(a);
+    </script>
+</body>
+</html>

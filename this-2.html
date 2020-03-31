@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lexical-scope</title>
+</head>
+<body>
+    <p>hello</p>
+    <script>
+            //lets see some few examples on "this" keyword
+       var personObj={
+           firstName: 'AHEMEMD',lastName:"LUCKY",age: 23,
+           getDetails : function(){
+               console.log("hii")
+           }
+           }
+           personObj.getDetails(); //let's see how the programme runs.
+           /* 1. first the function calls to global scope of personObj
+              2. second then the programme reads all the data of the code.
+              3. then we see that we have executed "Hii" In the console.log, so the output will executes only.
+              4.bcz we didn't given any command to execute the local scope.*/
+    
+    </script>
+</body>
+</html>

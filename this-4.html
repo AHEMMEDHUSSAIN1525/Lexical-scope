@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lexical scope</title>
+</head>
+<body>
+    <h5>Lexica-scope</h5>
+    <script>
+        var car={
+            Name:"Benz",
+            Model:"Mercides",
+            Year:2018,
+            Price:'50lakhs',
+            getDetails:function(){
+               // console.log(this);// this console is to know the all details of the given obj
+                console.log(`Ahemmed car is ${this.Name} and its model is ${this.Model} he bought this car in the year ${this.Year}`);
+               // here we inspect each and every element 
+               
+               console.log("Ahemmed's car is" + this.Name + ' ' + this.Model);// here we use a normal method by using double qoutes
+                                                                              // we should sepearately have to give the spacing by using single qoutes(' ')
+
+
+            }
+            
+
+        }
+        car.getDetails();
+    </script>
+</body>
+</html>
